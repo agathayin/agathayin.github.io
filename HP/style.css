@@ -1,0 +1,161 @@
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+html,body {height: 100%; margin: 0;}
+.left {
+    position:absolute;
+    width: 50%;
+    height:100%;
+    background-color:#DCD1C1;
+    left: 0;
+    top:0;
+}
+.right {
+    position:absolute;
+    width: 50%;
+    height:100%;
+    background-color:#541F1F;
+    float: right;
+    left: 50%;
+    top:0;
+}   
+#glasses {
+    width: 70%;
+    margin: 15% 15% 0% 15%;
+}
+#font {width:80%;
+    margin: 5% 10%;}
+#p1 {
+    font-family: Georgia;
+    font-size: 12pt;
+    text-align: center;
+    line-height: 0;
+}
+#p1 > #l2 {font-size: 19pt;}
+#p2 {
+    margin: 5% 5% 5px 5%;
+    color: #DCD1C1;
+    text-align: center
+}
+#p2 > #platform {
+    width: 50%;
+    margin:  5% 25%;
+}
+#p2 > #button1 {
+    text-align: center;
+    width: 50%;
+    margin: 10px auto;
+    border: 3px solid black;
+    border-radius: 50px
+}
+#p2 a {
+    color: black;
+    text-decoration: none;
+}
+#p2 a:hover {
+    color: #DCD1C1;
+    text-decoration: none;
+}
+#p3 {
+    margin: 5%;
+    color: #DCD1C1;
+}
+#p3 p {
+    margin-top: 5%;
+}
+#Hogwarts {
+    height:350px;
+    background-image: url(Hogwarts.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+}
+#Hogwarts h2 {
+    opacity: 0;
+    font-size: 30pt;
+    font-family: Comic Sans MS;
+    font-weight: 100;
+    line-height: 60pt;
+}
+
+#Hogwarts h2:hover {opacity: 1; color: white;}
+#p4 {
+    margin: 5%;
+}
+#choose {
+    font-family: Fantasy;
+    text-transform: uppercase;
+    font-size: 21pt;
+    text-align: center;
+}
+#houses {
+    margin: 0 auto;
+    width: 90%;
+    height: 43px;
+}
+.house {
+    width: 44px;
+    float: left;
+    margin: 5% 8%;
+}
+.house:hover {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+#housetext {
+    clear: both;
+    color: black;
+}
+#houseimg {
+    height: 300px;
+    width:40%%;
+    margin: 3% 30%;
+}
+#button2 {
+    text-align: center;
+    width: 50%;
+    margin: 10px auto;
+    border: 3px solid black;
+    border-radius: 50px
+}
+#p4 a {
+    color: black;
+    text-decoration: none;
+}
+#p4 a:hover {
+    color: #541F1F;
+    font-weight: bold;
+    text-decoration: none;
+}
+.icon {
+    width:25%;
+    margin:3% 10%;
+}
+@keyframes shake {
+    0%  {transform: translate(0px,0px);}
+    25%  {transform: translate(5px,0px);}
+    50%  {transform: translate(-5px,0px);}
+    100%  {transform: translate(0px,0px);}
+}
+.icon:hover {
+    animation: shake 300ms linear infinite;
+}
+#hmenu {
+    width:70px;
+    float:right;
+    margin-right: 5%;
+    
+}
+#avatar {
+    width:300px;
+    border-radius: 360px;
+    clear:both;
+}
+#aimg {
+    width:30%;
+    margin:0 auto;
+}
+#avatartext {
+    width:80%;
+    margin:0 auto;
+    text-align: center;
+    clear:both;
+}

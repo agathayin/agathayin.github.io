@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">   
+</head>
+<body>
+<div class="left" style="background: #541F1F;">
+    <div id="p3">
+    <h2>Hogwarts School of Witchcraft and Wizardry</h2>
+    <div id="Hogwarts"><h2>Founded：C.993<br>
+Motto: <br>
+Draco dormiens nunquam titillandus<br>
+Never Tickle a Sleeping Dragon</h2></div>
+        
+    <p>Hogwarts is a coeducational, secondary boarding school, taking children from ages eleven to eighteen.
+Admission to Hogwarts is selective, in that children who show magical ability will automatically gain a place,and squibs cannot attend the school as students (though they can work there in other roles, as Argus Filch does). A magical quill at Hogwarts detects the birth of magical children and writes their names into a large parchment book, but there is no admission test because "you are either magical or you are not."
+
+Every year, a teacher checks this book and sends a letter to the children who are turning eleven. Acceptance or refusal of a place at Hogwarts must be posted by 31 July. The letter also contains a list of supplies like spell books, uniform, and other things that the student will need. The prospective student is expected to buy all the necessary materials, normally from shops in Diagon Alley, a concealed street near Charing Cross Road in London that can be found behind the wizarding pub, The Leaky Cauldron. 
+
+Though the school is in Great Britain, its catchment area is the wider British Isles, as Irish students can also attend.
+
+Each student is allowed to bring an owl OR a cat OR a toad. Along with the acceptance letter, first-year students are sent a list of required equipment which includes a wand, subject books, a standard size 2 pewter cauldron, a set of brass scales, a set of glass or crystal phials, a kit of basic potion ingredients (for Potions), and a telescope (for Astronomy). The Hogwarts uniform consists of plain work robes in black, a plain black hat, a pair of protective gloves, and a black winter cloak with silver fastenings. Each uniform must contain the wearer's nametag.</p>
+</div>
+    
+    </div>
+<div class="right" style="background: #DCD1C1;">
+    <div id="p4">
+    <div id="choose">Choose your house</div>
+        <div id="houses">
+        <img src="SVG/G-house.svg" class="house" onclick="javascript:house('g')">
+        <img src="SVG/H-house.svg" class="house" onclick="javascript:house('h')">
+        <img src="SVG/R-house.svg" class="house" onclick="javascript:house('r')">
+        <img src="SVG/S-house.svg" class="house" onclick="javascript:house('s')">
+        </div>
+    <div id="housetext"></div>
+
+    
+    </div>
+</div>
+    <script>
+    function house(choice){
+        
+        if (choice=="g"){
+            document.getElementById('housetext').innerHTML="<b>Gryffindor</b><br>Gryffindor values courage, bravery, nerve, and chivalry. Gryffindor's mascot is the lion, and its colours are scarlet and gold. During the books, the Head of this house is the Transfiguration Professor and Deputy Headmistress, Minerva McGonagall until she becomes headmistress, and the house ghost is Sir Nicholas de Mimsy-Porpington, more commonly known as Nearly Headless Nick. According to Rowling, Gryffindor corresponds roughly to the element of fire. The founder of the house is Godric Gryffindor.<br>The Gryffindor common room is in one of the castle's highest towers, and its entrance is on the seventh floor in the east wing of the castle and is guarded by a painting of The Fat Lady, who is garbed in a pink dress. She permits entry only after being given the correct password, as was established in the third book, when Sirius Black tried forcing entry into the tower, only to be blocked by The Fat Lady after he could not give the correct password. In the first book, Neville Longbottom tends to forget the password and must wait near the painting until other Gryffindors arrive to open the way.";
+        } else if(choice=="h"){
+            document.getElementById('housetext').innerHTML="<b>Hufflepuff</b><br>Hufflepuff values hard work, patience, justice, and loyalty. The house mascot is the badger, and canary yellow and black are its colours. During the books, the Head of this house is the Herbology Professor Pomona Sprout, and the house ghost is The Fat Friar. According to Rowling, Hufflepuff corresponds roughly to the element of earth. The founder of this house is Helga Hufflepuff.<br>The entrance to the Hufflepuff dormitories and common room entrance is concealed in a pile of large barrels in an alcove in the corridor that holds the kitchen. To enter, one must tap the barrel two from the bottom in the middle of the second row in the rhythm of \"Helga Hufflepuff\". Unlike any other house, the Hufflepuff common room has a repelling device that douses the illegal entrant in vinegar if the wrong lid is tapped or the rhythm is wrong. The Hufflepuff common room is filled with yellow hangings and fat armchairs and it has little underground tunnels leading to the dormitories, all of which have perfectly round doors, like barrel tops.";
+        } else if (choice=="r"){
+            document.getElementById('housetext').innerHTML="<b>Ravenclaw</b><br>Ravenclaw values intelligence, creativity, learning, and wit. The house mascot is an eagle and the house colours are blue and bronze (blue and grey in the films). During the books, the head of this house is the Charms teacher, Professor Filius Flitwick, and the house ghost is The Grey Lady. According to Rowling, Ravenclaw corresponds roughly to the element of air. The founder of this house is Rowena Ravenclaw.<br>The dormitories are in Ravenclaw Tower, on the west side of Hogwarts. The common room is round and filled with blue hangings and armchairs, has a domed ceiling painted with stars and features a replica statue of Rowena wearing her diadem. Harry also notes that Ravenclaws \"have a spectacular view of the surrounding mountains\". A logical riddle must be solved to gain entry, whereas the Gryffindor and Slytherin common rooms only require a password (Hufflepuffs need to tap a barrel in the rhythm of \"Helga Hufflepuff\"), indicating that it may be easier for those students from other houses who possess a high degree of intelligence to enter this common room than others. Professor McGonagall, the head of the Gryffindor House, solves the riddle accurately."
+        } else if(choice=="s"){
+             document.getElementById('housetext').innerHTML="<b>Slytherin</b><br>Slytherin values ambition, cunning, leadership, and resourcefulness; the Sorting Hat said in Harry Potter and the Philosopher's Stone that Slytherins will do anything to get their way. The house mascot of Slytherin is the serpent, and the house colours are green and silver. During the books, the Head of House is Professor Severus Snape until the seventh book. Then, Professor Horace Slughorn, the previous Head of House, comes out of retirement, re-assuming authority after Snape becomes headmaster. The ghost of Slytherin house is The Bloody Baron. According to Rowling, Slytherin corresponds roughly to the element of water. The founder of this house is Salazar Slytherin.<br>The Slytherin dormitories and common room are reached by speaking a password to a patch of bare stone wall in the dungeons, which causes a hidden door to open. The Slytherin common room is a long, low, dungeon-style room, under the Hogwarts Lake, furnished with green lamps and carved armchairs. The room is described in the second book as having a greenish glow."
+        }
+        document.getElementById('housetext').innerHTML+="<br><img id='houseimg' src='houseimg.png'>"
+        document.getElementById('housetext').innerHTML+="<p id='button2'><a href='index3.html'>Meet your friends</a></p>"
+        
+    }
+    
+    
+    
+    </script>
+    
+    
+</body>
+
+
+</html>

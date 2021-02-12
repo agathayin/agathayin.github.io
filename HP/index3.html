@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">   
+</head>
+<body>
+<div class="left">
+    <img class="icon" src="SVG/harry.svg" onclick="javascript:avatar(1)">
+    <img class="icon" src="SVG/ron.svg" onclick="javascript:avatar(2)">
+    <img class="icon" src="SVG/hermione.svg" onclick="javascript:avatar(3)">
+    <img class="icon" src="SVG/Dumbledore.svg" onclick="javascript:avatar(4)">
+    <img class="icon" src="SVG/voldmort.svg" onclick="javascript:avatar(5)">
+    <img class="icon" src="SVG/snape.svg" onclick="javascript:avatar(6)">
+    
+    
+   
+</div>
+<div class="right">
+    <a id="button3" href="index.html"><img id="hmenu" src="SVG/Hmenu.svg" /></a>
+    <div id="p6">
+        <div id="aimg">
+    <img id="avatar" /></div>
+    <div id="avatartext"></div>
+    </div>
+</div>
+    <script>
+    function avatar(id){
+        if(id==1){
+        document.getElementById('avatar').src="1x/harryP.png"
+        document.getElementById('avatartext').innerHTML="<p>Harry Potter is The Boy Who Lived, singled out by Lord Voldemort at birth to be his greatest rival, and our hero<br><strong>FULL NAME</strong><br>Harry James Potter<br><strong>BIRTHDAY</strong><br>31 July 1980<br><strong>WAND</strong><Br>Holly and Phoenix feather, eleven inches, nice and supple, it shares its core with Voldemort's wand<Br><strong>HOUSE</strong><Br>Gryffindor<Br><strong>PATRONUS</strong><Br>Stag<br><strong>PARENTS</strong><Br>Lily and James Potter<br><strong>SKILLS</strong><br>Parseltongue, Defence Against the Dark Arts, skilled Seeker</p>"
+        } else if (id==2){
+            document.getElementById('avatar').src="1x/ron_potrait.png"
+            document.getElementById('avatartext').innerHTML="<p>One of Harry Potter’s two best friends, fellow Gryffindor, and youngest Weasley son<br><strong>FULL NAME</strong><br>Ronald Bilius Weasley<br><strong>BIRTHDAY</strong><br>1 March 1980<br><strong>WAND</strong><Br>First wand: Twelve inch, ash wood and unicorn tail hair wand, hand-me-down from his brother Charlie; Second wand: Fourteen inch, willow and unicorn tail hair<Br><strong>HOUSE</strong><Br>Gryffindor<Br><strong>PATRONUS</strong><Br>Jack Russell terrier<br><strong>PARENTS</strong><Br>Molly Weasley and Arthur Weasley<br><strong>SKILLS</strong><br>Wizard chess, Quidditch goalkeeping<br><strong>HOBBIES</strong><br>Supporting the Chudley Cannons, eating sweets</p>"
+
+        } else if (id==3){
+            document.getElementById('avatar').src="1x/hermione_potrait.png"
+            document.getElementById('avatartext').innerHTML="<p>From bookish Muggle-born to one of Gryffindor's bravest<br><strong>FULL NAME</strong><br>Hermione Jean Granger<br><strong>BIRTHDAY</strong><br>19 September 1979<br><strong>WAND</strong><Br>Dragon heartstring core, ten and three-quarter inches, vine wood<Br><strong>HOUSE</strong><Br>Gryffindor<Br><strong>PATRONUS</strong><Br>Otter<br><strong>PARENTS</strong><Br>Mr and Mrs Granger, both Muggles, both dentists<br><strong>SKILLS</strong><br>PAlmost everything<br><strong>HOBBIES</strong><br>Reading, campaigning for House-Elves' rights</p>"
+        } else if (id==4){
+            document.getElementById('avatar').src="1x/Dumbledore_potrait.png"
+            document.getElementById('avatartext').innerHTML="<p>Hogwarts Headmaster, founder of the Order of the Phoenix, with a fondness for sherbet lemons and knitting patterns<br><strong>FULL NAME</strong><br>Albus Percival Wulfric Brian Dumbledore<br><strong>BIRTHDAY</strong><br>1881<br><strong>WAND</strong><Br>Elder and Thestral tail hair, fifteen inches<Br><strong>HOUSE</strong><Br>Gryffindor<Br><strong>PATRONUS</strong><Br>Phoenix<br><strong>PARENTS</strong><Br>Percival and Kendra Dumbledore<br><strong>SKILLS</strong><br>Considered by many to be one of the most powerful wizards of his time<br><strong>HOBBIES</strong><br>Ten pin bowling and chamber music<br><strong>DEATH</strong><br>30 June 1997</p>"
+            
+        } else if (id==5){
+            document.getElementById('avatar').src="1x/voldemort_potrait.png"
+             document.getElementById('avatartext').innerHTML="<p>Formerly known as Tom Marvolo Riddle and commonly referred to as He-Who-Must-Not-Be-Named. The most powerful Dark wizard of all time<br><strong>FULL NAME</strong><br>ord Voldemort, formerly Tom Marvolo Riddle. Also known as the Dark Lord, He-Who-Must-Not-Be-Named and You-Know-Who<br><strong>BIRTHDAY</strong><br>31 December 1926<br><strong>WAND</strong><Br>Thirteen and a half inches, yew, phoenix feather, shares its core with Harry Potter's wand<br><strong>HOUSE</strong><Br>Slytherin<br><strong>PARENTS</strong><Br>Tom Riddle Sr and Merope Gaunt<br><strong>SKILLS</strong><br>Dark magic, Inferi creation and control, Parseltongue and the power to possess living creatures<br><strong>DEATH</strong><br>2 May 1998</p>"
+            
+        } else if (id==6){
+            document.getElementById('avatar').src="1x/snape_potrait.png"
+             document.getElementById('avatartext').innerHTML="<p>Hogwarts Potions master, Head of Slytherin house and former Death Eater. Holds a grudge against Harry<br><strong>FULL NAME</strong><br>Severus Snape<br><strong>BIRTHDAY</strong><br>9 January 1960<br><strong>HOUSE</strong><Br>Slytherin<Br><strong>PATRONUS</strong><Br>Doe<br><strong>PARENTS</strong><Br>Tobias Snape and Eileen Snape<br><strong>SKILLS</strong><br>Extremely skilled at potions and Occlumency<br><strong>DEATH</strong><br>2 May 1998</p>"
+        }
+    }
+    
+    
+    
+    
+    
+    </script>
+    
+    
+</body>
+
+
+</html>
