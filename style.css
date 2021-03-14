@@ -70,6 +70,12 @@ nav a {
   margin: 0 25px;
 }
 
+nav .menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 .logo {
   display: block;
   margin: 0;
@@ -313,6 +319,16 @@ a:hover {
 
 #expeience #timeline .experienceWrapper.edu .year {
   background: #1e2021;
+}
+
+#expeience #timeline .experienceWrapper .description ul {
+  list-style: square;
+  padding-left: 1em;
+}
+
+#expeience #timeline .experienceWrapper .description ul li {
+  list-style: inherit;
+  display: list-item;
 }
 
 #projects {

@@ -57,6 +57,9 @@ nav {
     a {
         margin: 0 25px;
     }
+    .menu {
+        display: inline-flex;
+    }
 }
 .logo {
     display: block;
@@ -239,6 +242,16 @@ a:hover {
                 background: #3d3d3d;
                 .year {
                     background: #1e2021;
+                }
+            }
+            .description {
+                ul {
+                    list-style: square;
+                    padding-left: 1em;
+                    li {
+                        list-style: inherit;
+                        display: list-item;
+                    }
                 }
             }
         }
