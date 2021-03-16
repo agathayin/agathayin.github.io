@@ -1,10 +1,10 @@
 //data
 const photos = [
-    {title:'Brochure design', url: 'images/media_kit.png', category: 'Design'},
-    {title:'The Artists Forum', url: 'images/bootstrap.png', category: 'Programming'},
-    {title:'Design project: Mulan poster', url: 'images/mulan.png', category: 'Design'},
+    // {title:'Brochure design', url: 'images/media_kit.png', category: 'Design'},
+    // {title:'Design project: Mulan poster', url: 'images/mulan.png', category: 'Design'},
     {title:'Interactive design and SVG practice', url: 'images/harry_potter.png', category: 'Programming'},
     {title:'Real-time clock without hands challenge', url: 'images/clock_day.gif', category: 'Programming'},
+    {title:'The Artists Forum', url: 'images/bootstrap.png', category: 'Programming'},
     {title:'P5.js data visualization', url: 'images/p5.gif', category: 'Programming'},
     {title:'CD product design', url: 'images/CD Cover & Posters.png', category: 'Design'},
 ]

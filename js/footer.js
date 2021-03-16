@@ -33,8 +33,8 @@ const footerTemplateStyle = `
 footerTemplateContent = `
     <footer>
         <div class="socialLinks">
-            <a><img src="./images/facebook.svg" alt="facebook" /></a>
-            <a><img src="./images/linkedin.svg" alt="linkedIn" /></a>
+            <a><img src="`+document.location.origin+`/images/facebook.svg" alt="facebook" /></a>
+            <a><img src="`+document.location.origin+`/images/linkedin.svg" alt="linkedIn" /></a>
         </div>
         <div>Contact email: agathayin.sh@gmail.com</div>
     </footer>
