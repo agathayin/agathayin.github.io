@@ -1,5 +1,6 @@
 //data
 const projects = [
+    {title:'Etomon', imgUrl: 'etomon/img/upcoming_classes.png', category: 'Programming', description: 'Website pages written in Node, Express, Vanilla Javascript, jQuery and React.',link:"/etomon/index.html"},
     {title:'Brochure design', imgUrl: 'images/media_kit.png', category: 'Design', description: 'Brochure design for The Artists Forum film festival'},
     {title:'The Artists Forum', imgUrl: 'images/bootstrap.png', category: 'Programming',link:"theartistsforum/index.html", description: 'Use Bootstrap to create new interface for a current website'},
     {title:'Design project: Mulan poster', imgUrl: 'images/mulan.png', category: 'Design', description: 'The New School media project. Designed for film Mulan.'},
