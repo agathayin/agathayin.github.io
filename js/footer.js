@@ -33,8 +33,9 @@ const footerTemplateStyle = `
 footerTemplateContent = `
     <footer>
         <div class="socialLinks">
-            <a><img src="`+document.location.origin+`/images/facebook.svg" alt="facebook" /></a>
-            <a><img src="`+document.location.origin+`/images/linkedin.svg" alt="linkedIn" /></a>
+            <a href="https://www.facebook.com/profile.php?id=100020210538068"><img src="`+document.location.origin+`/images/facebook.svg" alt="facebook" /></a>
+            <a href="https://github.com/agathayin"><img src="`+document.location.origin+`/images/github.svg" alt="github" /></a>
+            <a href="https://www.linkedin.com/in/yancong-yin-a852ab163"><img src="`+document.location.origin+`/images/linkedin.svg" alt="linkedIn" /></a>
         </div>
         <div>Contact email: agathayin.sh@gmail.com</div>
     </footer>

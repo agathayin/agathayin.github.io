@@ -92,6 +92,7 @@ a:hover {
 
 /* homepage */
 .intro {
+    position: relative;
     color: #ffffff;
     a {
         color: #99a2b0;
@@ -107,9 +108,21 @@ a:hover {
     #downloadResume {
         padding: 1em 2em;
         border: 1px solid #99a2b0;
-        margin: 1em auto 0;
+        margin: 2em auto 0;
         display: block;
         text-align: center;
+    }
+    .socialLinks {
+        display: inline-flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        a {
+            margin-left: 0.5em;
+            img {
+                width: 25px;
+            }
+        }
     }
 }
 #photoGallery {
