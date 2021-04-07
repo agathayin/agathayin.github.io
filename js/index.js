@@ -22,6 +22,7 @@ const skills = [
     {category: 'programming', name:"react", score: 4, imgUrl: 'images/skills/react.png'},
     {category: 'programming', name:"node", score: 4, imgUrl: 'images/skills/node.jpg'},
     {category: 'programming', name:"mongodb", score: 3, imgUrl: 'images/skills/mongodb.png'},
+    {category: 'programming', name:"git", score: 3, imgUrl: 'images/skills/git.png'},
 ]
 const experience = [
     {yearfrom: 2019, yearTo: 'today', category: 'job', title1: 'Etomon', title2: 'Frontend developer', description: ['Implement responsive websites from concept through development','Maintain, optimize, and troubleshoot websites','collaborate with team members to assess UI and UX designs']},
