@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Chivo" rel="stylesheet" />
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header"><img src="./logo.svg" alt="logo" height="56" width="56" /><span>pod</span></div>
+      <div id="content">
+        <div class="title" style="color: #54e6af">PUBLISH YOUR PODCASTS</div>
+        <div class="title" style="color: #fff; margin-bottom: 1em">EVERYWHERE</div>
+        <div></div>
+        <div id="grid">
+          <div id="text" style="color: #c2cbe5" style="margin-top: 2em">
+            Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify, Apple Podcasts,
+            Google Podcasts, P ocket Casts and more!
+          </div>
+          <div id="form">
+            <div id="formWrapper">
+              <input type="text" placeholder="Email address" name="email" required />
+              <button type="submit" id="requestAccess" onclick="submit()">Request Access</button>
+            </div>
+            <div id="formWarning"></div>
+          </div>
+          <div id="logo">
+            <img src="./logo_shopify.svg" />
+            <img src="./logo_applePodcast.svg" />
+            <img src="./logo_googlePodcasts.svg" />
+            <img src="./logo_pocketCasts.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
