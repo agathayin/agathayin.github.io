@@ -1,0 +1,304 @@
+a {
+  text-decoration: none;
+  color: #fff;
+}
+body {
+  background-image: url("assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+.textColor {
+  color: #d0d6f9;
+}
+.mobile {
+  display: none;
+}
+
+header {
+  display: inline-flex;
+  width: 100%;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(2px);
+}
+#logo {
+  width: 48px;
+  margin-left: 5%;
+}
+header hr {
+  width: 30%;
+  margin-right: -2em;
+  border-color: rgba(151, 151, 151, 0.25);
+}
+
+header #menu {
+  width: 60%;
+  display: inline-flex;
+  background-color: rgba(151, 151, 151, 0.4);
+  justify-content: space-evenly;
+}
+#menu a {
+  padding: 1em 0;
+}
+#menu span {
+  margin-right: 0.5em;
+}
+#menu > .active {
+  border-bottom: 3px solid #fff;
+}
+
+/* home */
+#exploreBtn {
+  border: 1px solid #fff;
+  width: 274px;
+  height: 274px;
+  background: #fff;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-size: 32px;
+  margin: auto;
+}
+#exploreBtnWrapper {
+  border: none;
+  width: 450px;
+  height: 450px;
+  background: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+#exploreBtnWrapper:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+#home {
+  width: 80%;
+  margin: 20% auto;
+}
+#home #homeText {
+  text-align: left;
+}
+#home #homeText #textIntro {
+  font-size: 28px;
+}
+#home #homeText #textSpace {
+  font-size: 150px;
+}
+#home #homeBtn {
+  text-align: center;
+}
+.contentContainer {
+  width: 80%;
+  margin: 10%;
+}
+/* destination */
+#tabs li a {
+  color: #d0d6f9;
+  cursor: pointer;
+}
+#destinationTitle {
+  font-size: 100px;
+}
+/* crew */
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #979797;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 1em;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: #fff;
+}
+/* technology */
+#techContainer {
+  display: flex;
+  flex-direction: row;
+}
+#techContainer #pagination {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 32px;
+  width: 10%;
+  height: 40vh;
+  justify-content: space-between;
+}
+#techContainer #pagination span {
+  display: block;
+  background: none;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  color: #ffffff;
+  display: inline-block;
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.7em;
+  height: 1.7em;
+  cursor: pointer;
+}
+#techContainer #pagination span.active {
+  background: #fff;
+  color: #0b0d17;
+}
+#techContainer #image {
+  order: 3;
+}
+#techContainer #content {
+  order: 2;
+  width: 40%;
+  margin: 0 10%;
+}
+
+@media screen and (max-width: 768px) {
+  header hr {
+    display: none;
+  }
+  /* home */
+  #exploreBtn {
+    width: 242px;
+    height: 242px;
+  }
+  #exploreBtnWrapper {
+    width: 420px;
+    height: 420px;
+  }
+  #home #homeText {
+    text-align: center;
+  }
+  #home #homeText #textIntro {
+    font-size: 20px;
+  }
+  #home #homeText #textSpace {
+    font-size: 150px;
+  }
+  #home #homeBtn {
+    display: flex;
+    justify-content: center;
+  }
+  #destinationTitle {
+    font-size: 80px;
+  }
+  #destination #image {
+    margin-bottom: 2em;
+  }
+  #destination #content {
+    text-align: center;
+  }
+  #destination #content ul {
+    font-size: 16px;
+    justify-content: center;
+  }
+  #crew #content {
+    text-align: center;
+  }
+  #techContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #techContainer #pagination {
+    order: 2;
+    display: block;
+    flex-direction: column;
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 0;
+    height: max-content;
+    margin-bottom: 3rem;
+  }
+  #techContainer #image {
+    order: 1;
+    margin: 0 -13%;
+  }
+  #techContainer #image img {
+    width: 100%;
+  }
+  #techContainer #content {
+    order: 3;
+    width: 100%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 15px;
+  }
+  header hr {
+    display: none;
+  }
+  #logo {
+    width: 40px;
+    margin-left: 5%;
+    margin-top: 10px;
+  }
+  .mobile {
+    display: block;
+  }
+  header #menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    width: 90%;
+    height: 100vh;
+    display: none;
+    backdrop-filter: blur(100px);
+    margin: 0;
+    padding: 0;
+  }
+  header #menu a {
+    display: block;
+    margin: 2em;
+    font-size: 19px;
+    text-transform: uppercase;
+  }
+  header #menu .close {
+    display: block;
+    margin: 1em;
+    text-align: right;
+  }
+  header #menu hr {
+    display: none;
+  }
+  #menu > .active {
+    border-bottom: none;
+  }
+  /* home */
+  #exploreBtn {
+    font-size: 20px;
+    margin: 0 auto;
+  }
+  #exploreBtnWrapper {
+    width: 250px;
+    height: 250px;
+  }
+  #home #homeText {
+    text-align: center;
+  }
+  #home #homeText #textIntro {
+    font-size: 16px;
+  }
+  #home #homeText #textSpace {
+    font-size: 80px;
+  }
+  #dotSwitch {
+    text-align: center;
+  }
+}
