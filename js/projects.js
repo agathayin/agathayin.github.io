@@ -1,6 +1,13 @@
 //data
 const projects = [
   {
+    title: "Space Tourism",
+    imgUrl: "space-tourism/assets/home/background-home-desktop.jpg",
+    category: "Programming",
+    link: "space-tourism/index.html",
+    description: "Responsive website with CSS and jQuery",
+  },
+  {
     title: "Pod request access landing page",
     imgUrl: "images/pod_request_access.jpg",
     category: "Programming",
