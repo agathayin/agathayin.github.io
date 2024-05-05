@@ -1,0 +1,144 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.desaturatedRed {
+  color: hsl(0, 36%, 70%);
+}
+.softRed {
+  color: hsl(0, 93%, 68%);
+}
+.darkGrayishRed {
+  color: hsl(0, 6%, 24%);
+}
+body {
+  background-image: url("images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  padding: 0;
+  margin: 0;
+  color: hsl(0, 36%, 70%);
+}
+header {
+  padding: 3em 10%;
+}
+#cover {
+  width: 100%;
+}
+#cover img {
+  width: 100%;
+}
+#content {
+  text-align: center;
+  padding: 10%;
+}
+.title1 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+.title2 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+#text {
+  margin: 1em 0;
+}
+
+#formWrapper {
+  border: 1px solid hsl(0, 36%, 70%);
+  border-radius: 20px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#formWrapper input {
+  border: none;
+  margin: 5px 10px;
+  padding: 10px;
+  width: 100%;
+  background: none;
+}
+#formWrapper img {
+  margin: 0 10px;
+}
+#formWrapper button {
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: none;
+  margin: 0;
+  padding: 0.9em 2em;
+  border-radius: 20px;
+  box-shadow: 0px 8px 10px 3px rgba(206, 151, 151, 0.3);
+  cursor: pointer;
+}
+#formWrapper button:hover {
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 85%, 87%));
+}
+#formWarning {
+  text-align: left;
+  padding: 5px 20px;
+}
+
+#errorIcon {
+  display: none;
+}
+@media screen and (min-width: 375px) {
+  #cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 100vh;
+  }
+  #cover {
+    height: 100vh;
+    width: auto;
+  }
+}
+@media screen and (min-width: 600px) {
+  #content {
+    width: 30%;
+  }
+  #cover {
+    height: 100vh;
+    width: 50%;
+  }
+  #cover img {
+    height: 100vh;
+    width: auto;
+  }
+}
+@media screen and (min-width: 960px) {
+  #cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 100vh;
+    width: auto;
+  }
+  #cover {
+    height: 100vh;
+    width: 50%;
+  }
+  #cover img {
+    height: auto;
+    width: 100%;
+  }
+  #content {
+    width: 30%;
+  }
+}

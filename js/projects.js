@@ -1,6 +1,13 @@
 //data
 const projects = [
   {
+    title: "Comming Soon",
+    imgUrl: "base-apparel-coming-soon-master/images/hero-desktop.jpg",
+    category: "Programming",
+    link: "base-apparel-coming-soon-master/index.html",
+    description: "Responsive website with CSS and JavaScript",
+  },
+  {
     title: "Space Tourism",
     imgUrl: "space-tourism/assets/home/background-home-desktop.jpg",
     category: "Programming",

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.svg" />
+    </header>
+    <div id="cover">
+      <picture>
+        <source media="(min-width: 375px)" srcset="images/hero-desktop.jpg" />
+        <source media="(max-width: 375px)" srcset="images/hero-mobile.jpg" />
+        <img src="images/heroku-desktop.jpg" alt="cover image" />
+      </picture>
+    </div>
+    <div id="content">
+      <div class="title1">We're</div>
+      <div class="title2">coming</div>
+      <div class="title2">soon</div>
+      <div id="text">
+        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date
+        with announcements and our launch deals.
+      </div>
+      <div id="formWrapper">
+        <input placeholder="Email Address" />
+        <img id="errorIcon" src="images/icon-error.svg" width="20" height="20" />
+        <button type="submit" onclick="submit()"><img src="images/icon-arrow.svg" /></button>
+      </div>
+      <div id="formWarning"></div>
+    </div>
+  </body>
+</html>
