@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <img src="images/logo.svg" />
+        <img src="images/icon-hamburger.svg" id="hamburger" onclick="switchShowMenu()" />
+        <div id="menu">
+          <a href="#">About</a><a href="#">Services</a><a href="#">Projects</a><a href="#">Contact</a>
+        </div>
+      </div>
+      <div id="slogan">
+        <h1>We are creatives</h1>
+        <div><img src="images/icon-arrow-down.svg" /></div>
+      </div>
+    </header>
+
+    <div id="featuresGrid">
+      <div id="imageTransform" class="feature"></div>
+      <div id="transformBrand" class="feature">
+        <div class="title">Transform your brand</div>
+        <div class="text">
+          Transform your brand We are a full-service creative agency specializing in helping brands grow fast. Engage
+          your clients through compelling visuals that do most of the marketing for you.
+        </div>
+        <div class="link" style="text-decoration-color: #fad400">Learn more</div>
+      </div>
+      <div id="imageStandOut" class="feature"></div>
+      <div id="standOut" class="feature">
+        <div class="title">Stand out to the right audience</div>
+        <div class="text">
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
+          build and extend your brand in digital places.
+        </div>
+        <div class="link" style="text-decoration-color: #fe7766">Learn more</div>
+      </div>
+      <div id="graphicDesign" class="feature">
+        <div class="title">Graphic design</div>
+        <div class="text">
+          Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+          potential clients’ attention.
+        </div>
+      </div>
+      <div id="photography" class="feature">
+        <div class="title">Photography</div>
+        <div class="text">
+          Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        </div>
+      </div>
+    </div>
+    <div id="clientTestimonials">
+      <div class="title">Client testimonials</div>
+      <div id="testimonials">
+        <div class="testimonial">
+          <img src="images/image-emily.jpg" />
+          <div class="quoto">
+            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
+            hit.
+          </div>
+          <div class="name">Emily R.</div>
+          <div class="jobTitle">Marketing Director</div>
+        </div>
+        <div class="testimonial">
+          <img src="images/image-thomas.jpg" />
+          <div class="quoto">
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+            enjoyable experience.
+          </div>
+          <div class="name">Thomas S.</div>
+          <div class="jobTitle">Chief Operating Officer</div>
+        </div>
+        <div class="testimonial">
+          <img src="images/image-jennie.jpg" />
+          <div class="quoto">
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </div>
+          <div class="name">Jennie F.</div>
+          <div class="jobTitle">Business Owner</div>
+        </div>
+      </div>
+    </div>
+    <div id="footerImage">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/desktop/image-gallery-milkbottles.jpg" />
+        <source media="(max-width: 768px)" srcset="images/mobile/image-gallery-milkbottles.jpg" />
+        <img src="images/mobile/image-gallery-milkbottles.jpg" />
+      </picture>
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/desktop/image-gallery-orange.jpg" />
+        <source media="(max-width: 768px)" srcset="images/mobile/image-gallery-orange.jpg" />
+        <img src="images/mobile/image-gallery-orange.jpg" />
+      </picture>
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/desktop/image-gallery-cone.jpg" />
+        <source media="(max-width: 768px)" srcset="images/mobile/image-gallery-cone.jpg" />
+        <img src="images/mobile/image-gallery-cone.jpg" />
+      </picture>
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/desktop/image-gallery-sugarcubes.jpg" />
+        <source media="(max-width: 768px)" srcset="images/mobile/image-gallery-sugarcubes.jpg" />
+        <img src="images/mobile/image-gallery-sugarcubes.jpg" />
+      </picture>
+    </div>
+    <footer>
+      <div id="logo">
+        <embed src="images/logo.svg"></embed>
+      </div>
+      <div id="links">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+      </div>
+      <div id="icons">
+        <a href="#"><img src="images/icon-facebook.svg" /></a>
+        <a href="#"><img src="images/icon-instagram.svg" /></a>
+        <a href="#"><img src="images/icon-twitter.svg" /></a>
+        <a href="#"><img src="images/icon-pinterest.svg" /></a>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function switchShowMenu() {
+      let elem = document.getElementById("menu");
+      if (elem.style.display === "block") {
+        document.getElementById("menu").style.display = "none";
+      } else {
+        document.getElementById("menu").style.display = "block";
+      }
+    }
+  </script>
+</html>

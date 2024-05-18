@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+header {
+  box-sizing: border-box;
+  width: 100%;
+  background-image: url("images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-color: #00bbfd;
+  height: 800px;
+  padding: 30px;
+  background-position: center bottom;
+  background-size: 100% auto;
+}
+
+#header {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#menu {
+  display: inline-block;
+}
+#menu a {
+  color: #fff;
+  padding: 0.8em 1em;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+#menu a:last-child {
+  color: #000;
+  background: #fff;
+  border-radius: 20px;
+}
+#hamburger {
+  display: none;
+}
+
+#slogan {
+  text-align: center;
+}
+#slogan h1 {
+  color: #fff;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+  font-size: 56px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+#featuresGrid {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#transformBrand {
+  order: 1;
+}
+#imageTransform {
+  order: 2;
+  background-image: url("images/desktop/image-transform.jpg");
+}
+#imageStandOut {
+  background-image: url("images/desktop/image-stand-out.jpg");
+  background-repeat: no-repeat;
+  order: 3;
+}
+#standOut {
+  order: 4;
+}
+#graphicDesign {
+  order: 5;
+  width: 720px;
+  height: 600px;
+  background-image: url("images/desktop/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  padding: 30% 15% 0;
+  text-align: center;
+}
+#photography {
+  order: 6;
+  width: 720px;
+  height: 600px;
+  background-image: url("images/desktop/image-photography.jpg");
+  padding: 30% 15% 0;
+  text-align: center;
+}
+#transformBrand,
+#standOut {
+  width: 30%;
+  height: 30%;
+  padding: 10%;
+  box-sizing: border-box;
+}
+#featuresGrid .feature {
+  width: 50%;
+  max-width: 720px;
+  max-height: 600px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  max-width: 720px;
+  max-height: 600px;
+}
+#featuresGrid .feature img {
+  max-width: 720px;
+  max-height: 600px;
+}
+.title {
+  font-size: 40px;
+  font-weight: 900;
+  max-width: 90vw;
+  overflow: hidden;
+}
+.text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.link {
+  font-size: 15px;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  margin-top: 1em;
+}
+.link:hover {
+  text-decoration-thickness: 8px;
+}
+#clientTestimonials {
+  width: 80%;
+  margin: 15% auto;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+#clientTestimonials .title {
+  color: #a7aaad;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+#testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+.testimonial img {
+  border-radius: 50%;
+  margin-bottom: 30px;
+  width: 72px;
+  margin: 30px auto;
+}
+.testimonial .quoto {
+  color: #5b636d;
+  margin-bottom: 1em;
+}
+.testimonial .name {
+  font-weight: 900;
+}
+.testimonial .jobTitle {
+  color: #a7aaad;
+}
+#footerImage {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  box-sizing: border-box;
+}
+#footerImage picture {
+  margin: 0;
+  padding: 0;
+}
+#footerImage picture img {
+  width: 100%;
+  height: 100%;
+}
+footer {
+  background-color: #90d4c6;
+  padding: 5%;
+  text-align: center;
+}
+footer div a {
+  color: #2c7566;
+  text-decoration: none;
+}
+footer div a:hover {
+  color: #fff;
+}
+footer #logo {
+  filter: invert(0.2) sepia(0.5) saturate(20) hue-rotate(110deg) brightness(0.4);
+}
+footer #links {
+  margin: 1em auto;
+}
+footer #links a {
+  margin: 1em;
+}
+footer #icons {
+  margin: 1em auto;
+}
+footer #icons a {
+  margin: 0.5em;
+}
+footer #icons a:hover {
+  filter: brightness(0) invert(1);
+}
+@media screen and (max-width: 768px) {
+  header {
+    background-image: url("images/mobile/image-header.jpg");
+    min-height: 538px;
+  }
+  #hamburger {
+    display: block;
+  }
+  #menu {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    right: 30px;
+    font-size: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 1em;
+  }
+  #menu::before {
+    content: "\25E2";
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: -25px;
+    right: -2px;
+  }
+  #menu a {
+    color: #000;
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin: 1em auto;
+  }
+  #menu a:last-child {
+    background: #fbd600;
+  }
+  #featuresGrid .feature {
+    width: 100%;
+    background-size: cover;
+    background-repeat: repeat-x;
+  }
+  #transformBrand {
+    order: 2;
+  }
+  #imageTransform {
+    order: 1;
+    background-image: url("images/mobile/image-transform.jpg");
+    min-height: 375px;
+  }
+  #imageStandOut {
+    min-height: 375px;
+    background-image: url("images/mobile/image-stand-out.jpg");
+    background-repeat: no-repeat;
+    order: 3;
+  }
+  #standOut {
+    order: 4;
+  }
+  #graphicDesign {
+    order: 5;
+    height: 600px;
+    background-image: url("images/mobile/image-graphic-design.jpg");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding: 83% 10% 0;
+    text-align: center;
+  }
+  #photography {
+    order: 6;
+    height: 600px;
+    background-image: url("images/mobile/image-photography.jpg");
+    padding: 83% 10% 0;
+    text-align: center;
+  }
+  #testimonials {
+    grid-template-columns: 1fr;
+  }
+  #footerImage {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0;
+  }
+  #slogan h1 {
+    font-size: 40px;
+    max-width: 90vw;
+    overflow: hidden;
+  }
+}

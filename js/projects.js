@@ -2,6 +2,13 @@
 const projects = [
   {
     title: "Comming Soon",
+    imgUrl: "sunnyside-agency-landing-page-main/images/screenshot.jpg",
+    category: "Programming",
+    link: "sunnyside-agency-landing-page-main/index.html",
+    description: "Responsive website with CSS and JavaScript",
+  },
+  {
+    title: "Comming Soon",
     imgUrl: "base-apparel-coming-soon-master/images/hero-desktop.jpg",
     category: "Programming",
     link: "base-apparel-coming-soon-master/index.html",
@@ -75,21 +82,21 @@ const projects = [
     category: "Design",
     description: "The New School media project: cd poster and cover design.",
   },
-  {
-    title: "Forum-style web design",
-    imgUrl: "images/catsyard.png",
-    category: "Programming",
-    link: "http://www.livelanguage.com/yiny/index.html",
-    description: "Catsyard: a place for meow lovers. This project uses HTML, CSS, and JavaScript.",
-  },
-  {
-    title: "Javascript storytelling: choice tree",
-    imgUrl: "images/love_choice_cover.png",
-    category: "Programming",
-    link: "LC/index.html",
-    description:
-      "Interactive website game. Based on the existing game. All images and the story belong to Akaba Studio. This project only aims to improve coding skills in creating complex tasks.",
-  },
+  // {
+  //   title: "Forum-style web design",
+  //   imgUrl: "images/catsyard.png",
+  //   category: "Programming",
+  //   link: "http://www.livelanguage.com/yiny/index.html",
+  //   description: "Catsyard: a place for meow lovers. This project uses HTML, CSS, and JavaScript.",
+  // },
+  // {
+  //   title: "Javascript storytelling: choice tree",
+  //   imgUrl: "images/love_choice_cover.png",
+  //   category: "Programming",
+  //   link: "LC/index.html",
+  //   description:
+  //     "Interactive website game. Based on the existing game. All images and the story belong to Akaba Studio. This project only aims to improve coding skills in creating complex tasks.",
+  // },
 ];
 
 $(function () {
