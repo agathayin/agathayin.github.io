@@ -1,7 +1,7 @@
 //data
 const projects = [
   {
-    title: "Comming Soon",
+    title: "Sunnyside",
     imgUrl: "sunnyside-agency-landing-page-main/images/screenshot.jpg",
     category: "Programming",
     link: "sunnyside-agency-landing-page-main/index.html",
