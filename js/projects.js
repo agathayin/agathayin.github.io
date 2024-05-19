@@ -2,9 +2,9 @@
 const projects = [
   {
     title: "Sunnyside",
-    imgUrl: "sunnyside-agency-landing-page-main/images/screenshot.jpg",
+    imgUrl: "sunnyside/images/cover.jpg",
     category: "Programming",
-    link: "sunnyside-agency-landing-page-main/index.html",
+    link: "sunnyside/index.html",
     description: "Responsive website with CSS and JavaScript",
   },
   {
