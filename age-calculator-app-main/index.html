@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background: hsl(0, 0%, 86%);
+        font-family: "Poppins", sans-serif;
+      }
+      #formContainer {
+        margin: 5%;
+        width: 90%;
+        background: #fff;
+        padding: 10% 5%;
+        border-radius: 10px;
+        border-end-end-radius: 5rem;
+      }
+      #inputs label {
+        color: hsl(0, 1%, 44%);
+        font-weight: bold;
+      }
+      #inputs label .err {
+        color: "#ff5757";
+      }
+      #inputs input .err {
+        border-color: "#ff5757";
+      }
+      #inputs input:hover {
+        box-shadow: none;
+        border-color: hsl(259, 100%, 65%);
+      }
+      #inputs input:focus {
+        box-shadow: none;
+        border-color: hsl(259, 100%, 65%);
+      }
+      #inputs div {
+        color: #ff5757;
+        font-size: 12px;
+      }
+      #button {
+        position: relative;
+        margin: 10px 0;
+      }
+      #button hr {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translate(0, 33px);
+        border-width: 1px;
+        border-color: hsl(0, 1%, 44%);
+      }
+      #button button {
+        background: hsl(259, 100%, 65%);
+        padding: 10px;
+        border-radius: 50%;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -25%);
+        border: none;
+        box-shadow: none;
+      }
+      #results {
+        font-size: 32px;
+        font-weight: 800;
+      }
+      #results span {
+        color: hsl(259, 100%, 65%);
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      @media only screen and (min-width: 768px) {
+        #button button {
+          left: 95%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="formContainer" class="container">
+      <div id="inputs">
+        <div class="row">
+          <div class="col-4" id="dayLabel">
+            <label id="dayLabel">Day</label>
+            <input id="dayInput" name="day" type="number" class="form-control" />
+            <div id="dayErr"></div>
+          </div>
+          <div class="col-4">
+            <label id="monthLabel">Month</label>
+            <input id="monthInput" name="month" type="number" class="form-control" />
+            <div id="monthErr"></div>
+          </div>
+          <div class="col-4">
+            <label id="yearLabel">Year</label>
+            <input id="yearInput" name="day" type="number" class="form-control" />
+            <div id="yearErr"></div>
+          </div>
+        </div>
+      </div>
+      <div id="button">
+        <hr />
+        <button type="submit" onclick="onSubmit()"><img src="./assets/images/icon-arrow.svg" alt="btn" /></button>
+      </div>
+      <div id="results">
+        <div><span id="yearResult">--</span> year</div>
+        <div><span id="monthResult">--</span> months</div>
+        <div><span id="dayResult">--</span> days</div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="#">Agatha Yin</a>.
+    </div>
+    <script>
+      function changeStyle(hasError = true, type = "day") {
+        if (hasError) {
+          document.getElementById(type + "Label").classList.add("err");
+          document.getElementById(type + "Input").classList.add("err");
+        } else {
+          document.getElementById(type + "Label").classList.remove("err");
+          document.getElementById(type + "Input").classList.remove("err");
+        }
+      }
+      function animateValue(elem, start, end, duration) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+          elem.innerHTML = Math.floor(progress * (end - start) + start);
+          if (progress < 1) {
+            window.requestAnimationFrame(step);
+          }
+        };
+        window.requestAnimationFrame(step);
+      }
+      function onSubmit() {
+        const monthDay = { 1: 31, 2: 28, 3: 31, 4: 30, 5: 31, 6: 30, 7: 31, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31 };
+        try {
+          console.log("submit");
+          let day = document.getElementById("dayInput").value;
+          let month = document.getElementById("monthInput").value;
+          let year = document.getElementById("yearInput").value;
+          day = Number(day);
+          month = Number(month);
+          year = Number(year);
+          let invalidDay = false;
+          let invalidMonth = false;
+          let invalidYear = false;
+
+          // validation
+          if (!day) {
+            document.getElementById("dayErr").innerHTML = "This field is required";
+            invalidDay = true;
+          } else if (day < 1 || day > 31) {
+            document.getElementById("dayErr").innerHTML = "Must be a valid day";
+            invalidDay = true;
+          } else {
+            document.getElementById("dayErr").innerHTML = "";
+          }
+          if (!month) {
+            document.getElementById("monthErr").innerHTML = "This field is required";
+            invalidMonth = true;
+          } else if (month < 1 || month > 12) {
+            document.getElementById("monthErr").innerHTML = "Must be a valid month";
+            invalidMonth = true;
+          } else {
+            document.getElementById("monthErr").innerHTML = "";
+          }
+          if (!year) {
+            document.getElementById("yearErr").innerHTML = "This field is required";
+            invalidYear = true;
+          } else {
+            document.getElementById("yearErr").innerHTML = "";
+          }
+          let time = new Date(year, month - 1, day);
+          console.log(time);
+          if (time.getTime() > new Date().getTime()) {
+            document.getElementById("yearErr").innerHTML = "Must be in the past";
+            invalidYear = true;
+          }
+          console.log(time.getFullYear(), time.getMonth(), time.getDate());
+          console.log(year, month - 1, day);
+          if (time.getFullYear() != year || time.getMonth() != month - 1 || time.getDate() != day) {
+            document.getElementById("dayErr").innerHTML = "Must be a valid day";
+            invalidDay = true;
+          } else {
+          }
+          // end validation and style
+          changeStyle(invalidDay, "day");
+          changeStyle(invalidMonth, "month");
+          changeStyle(invalidYear, "year");
+          if (invalidDay || invalidMonth || invalidYear) return;
+          console.log("start calculation");
+          // start calculation
+          let dayResult = 0;
+          let monthResult = 0;
+          let yearResult = 0;
+          let today = new Date(new Date().setHours(0, 0, 0, 0));
+          let diff = today.getTime() - time.getTime();
+          let remainingDiff = diff;
+          yearResult = today.getFullYear() - time.getFullYear();
+          monthResult = today.getMonth() - time.getMonth();
+          dayResult = today.getDate() - time.getDate();
+          if (dayResult < 0) {
+            monthResult -= 1;
+            let wholeMonthDays = monthDay[time.getMonth() + 1];
+            if (time.getMonth() + 1 == 2) {
+              if (time.getFullYear % 4 == 0) {
+                wholeMonthDays = 29;
+              }
+            }
+            dayResult = wholeMonthDays + dayResult;
+          }
+          if (monthResult < 0) {
+            yearResult -= 1;
+            monthResult = 12 + monthResult;
+          }
+          animateValue(document.getElementById("yearResult"), 0, yearResult, 1000);
+          animateValue(document.getElementById("monthResult"), 0, monthResult, 1000);
+          animateValue(document.getElementById("dayResult"), 0, dayResult, 1000);
+        } catch (err) {
+          console.log(err);
+        }
+      }
+      function onReady() {
+        document.onkeydown = function (evt) {
+          var keyCode = evt ? (evt.which ? evt.which : evt.keyCode) : event.keyCode;
+          if (keyCode == 13) {
+            onSubmit();
+          }
+        };
+      }
+      document.addEventListener("DOMContentLoaded", onReady, false);
+    </script>
+  </body>
+</html>
