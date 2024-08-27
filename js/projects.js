@@ -1,6 +1,13 @@
 //data
 const projects = [
   {
+    title: "Age Calculator",
+    imgUrl: "age-calculator-app-main/screenshot.jpg",
+    category: "Programming",
+    link: "age-calculator-app-main/index.html",
+    description: "JavaScript project about time calculation",
+  },
+  {
     title: "Sunnyside",
     imgUrl: "sunnyside/images/cover.jpg",
     category: "Programming",
