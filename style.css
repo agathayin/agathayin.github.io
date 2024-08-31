@@ -1,5 +1,5 @@
 body {
-  background: #303030;
+  background: #1e293b;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -21,16 +21,16 @@ section {
   margin: 0 auto;
   padding: 8em 1em;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .extendedBG {
   width: 70%;
   padding: 8em 15%;
-  background: #000000;
+  background: #0f172a;
   position: relative;
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .extendedBG > div {
@@ -50,16 +50,16 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #0a0a23;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #0f172a;
   padding: 0 1em;
   width: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: fixed;
   left: 0;
   top: 0;
@@ -154,9 +154,9 @@ a:hover {
 
 #photoGallery {
   -webkit-column-count: 3;
-          column-count: 3;
+  column-count: 3;
   -webkit-column-gap: 0.5em;
-          column-gap: 0.5em;
+  column-gap: 0.5em;
 }
 
 #photoGallery .photoWrapper {
@@ -178,21 +178,21 @@ a:hover {
   color: #fff;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity .2s, visibility .2s;
-  transition: opacity .2s, visibility .2s;
+  -webkit-transition: opacity 0.2s, visibility 0.2s;
+  transition: opacity 0.2s, visibility 0.2s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 15px;
   overflow: overlay;
 }
@@ -237,7 +237,7 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .skillsList .skillsWrapper {
@@ -246,14 +246,14 @@ a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 1em;
 }
 
@@ -261,8 +261,8 @@ a:hover {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 3px solid #FFF;
-  background: #FFF;
+  border: 3px solid #fff;
+  background: #fff;
 }
 
 .skillsList .skillsWrapper .text {
@@ -307,15 +307,15 @@ a:hover {
 #expeience #timeline .experienceWrapper {
   width: 50%;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   min-width: 300px;
   padding: 1em;
   background: rgba(0, 0, 0, 0.1);
   margin: 1em 1em 1em 0.1em;
   border-radius: 3px;
   -webkit-box-shadow: 4px 4px 6px 0px #000000;
-          box-shadow: 4px 4px 6px 0px #000000;
+  box-shadow: 4px 4px 6px 0px #000000;
   position: relative;
 }
 
@@ -360,7 +360,7 @@ a:hover {
   grid-column-gap: 1em;
   grid-row-gap: 1em;
   -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin-top: 1em;
 }
 
@@ -370,8 +370,8 @@ a:hover {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #projects .project img {
@@ -382,7 +382,7 @@ a:hover {
   max-height: 400px;
   min-height: 100px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #projects .project .text {
@@ -467,7 +467,8 @@ a:hover {
   text-align: right;
 }
 
-.modal .modal-content .close:hover, .modal .modal-content .close:focus {
+.modal .modal-content .close:hover,
+.modal .modal-content .close:focus {
   color: #1e2021;
   text-decoration: none;
   cursor: pointer;
@@ -498,7 +499,7 @@ a:hover {
     width: 100%;
     padding: 1em;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   .extendedBG > div {
     padding: 0;
@@ -506,7 +507,7 @@ a:hover {
   }
   #projects {
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .skillsList .skillsWrapper {
     margin: 0.5em;

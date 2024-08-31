@@ -21,8 +21,10 @@ const skills = [
   { category: "programming", name: "jQuery", score: 4, imgUrl: "images/skills/jquery.png" },
   { category: "programming", name: "react", score: 4, imgUrl: "images/skills/react.png" },
   { category: "programming", name: "node", score: 4, imgUrl: "images/skills/node.jpg" },
-  { category: "programming", name: "mongodb", score: 3, imgUrl: "images/skills/mongodb.png" },
-  { category: "programming", name: "git", score: 3, imgUrl: "images/skills/git.png" },
+  { category: "programming", name: "mongodb", score: 4, imgUrl: "images/skills/mongodb.png" },
+  { category: "programming", name: "git", score: 4, imgUrl: "images/skills/git.png" },
+  { category: "programming", name: "App Script", score: 4, imgUrl: "images/skills/Google_Apps_Script.png" },
+  { category: "programming", name: "Extension", score: 3, imgUrl: "images/skills/chrome_extension.png" },
 ];
 const experience = [
   {
@@ -65,7 +67,7 @@ const experience = [
     yearTo: 2019,
     category: "edu",
     title1: "The New School",
-    title2: "Master of Arts, Media Studies (3.02/4.0)",
+    title2: "Master of Arts, Media Studies",
     description:
       "Graphic and Web Design, Data mining and analysis, Programming and transforming data into visualization, Technology developments",
   },
@@ -74,7 +76,7 @@ const experience = [
     yearTo: 2015,
     category: "edu",
     title1: "Communication University of China",
-    title2: "Bechelor of Arts, Dutch language and literature (3.34/4.0)",
+    title2: "Bechelor of Arts, Dutch language and literature",
     description: "Dutch Linguistics, Politics, Economy and Culture of the Netherlands and Belgium, Translation Skills",
   },
   {
@@ -82,7 +84,7 @@ const experience = [
     yearTo: 2015,
     category: "edu",
     title1: "Communication University of China",
-    title2: "Journalism(3.3/4.0)",
+    title2: "Journalism",
     description: "Journalism Theory and History, News Writing and Interview Skills, New Media Skills",
   },
 ];
