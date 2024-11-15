@@ -1,0 +1,272 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: serif;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+header {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px 10%;
+}
+
+#header {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#menu {
+  display: inline-block;
+}
+#menu a {
+  color: #808084;
+  padding: 0.8em 1em;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+#menu a:hover {
+  color: #2c292f;
+}
+#menu a:last-child {
+  border: 1px solid #2c292f;
+  color: #2c292f;
+  background: #fff;
+  border-radius: 0px;
+}
+#menu a:last-child:hover {
+  background: #2c292f;
+  color: #fff;
+  border-radius: 0px;
+}
+#hamburger {
+  display: none;
+}
+
+.image-intro {
+  display: block;
+}
+#headingContent {
+  padding: 10%;
+  display: flex;
+}
+#headingTextContainer {
+  width: 50%;
+}
+.planBtn {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.planBtn:hover {
+  background: #fff;
+  color: #2c292f;
+}
+#heading {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  padding: 80px 10% 80px 10%;
+  margin-bottom: 280px;
+  height: min-content;
+  background: #2c2641;
+  color: #fff;
+  display: flex;
+  justify-self: space-between;
+  position: relative;
+}
+#heading::before {
+  content: "";
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  pointer-events: none;
+  background-image: url(images/bg-pattern-intro-left-desktop.svg);
+  background-position: left bottom;
+  top: 50%;
+}
+#heading::after {
+  content: "";
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  background-image: url(images/bg-pattern-intro-right-desktop.svg);
+  background-position: right top;
+  top: 0;
+  bottom: 0;
+}
+.image-intro {
+  margin-bottom: -200px;
+}
+.headingTitle {
+  font-size: 48px;
+  font-weight: bold;
+}
+.headingTitle:before {
+  content: "";
+  display: block;
+  border: 1px solid #c396c6;
+  width: 25%;
+}
+#features {
+  padding: 0 10%;
+}
+.featureTitle {
+  font-weight: 700;
+  margin: 1em 0;
+}
+.featureText {
+  font-weight: 400;
+}
+#banner {
+  color: #fff;
+  margin: 10%;
+  padding: 5%;
+  background: #2d2640 url(images/bg-pattern-how-we-work-desktop.svg) no-repeat top right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+#banner h2 {
+  width: 50%;
+}
+#banner button {
+  font-weight: bold;
+  border: 2px solid #fff;
+  color: #fff;
+  background: none;
+}
+#banner button:hover {
+  color: #2d2640;
+  background: #fff;
+}
+.footerContent {
+  padding: 5% 10% 5%;
+  background: #eee;
+  color: #2d2641;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footerTitle {
+  color: #837d88;
+  margin-bottom: 1em;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  #hamburger {
+    display: block;
+  }
+  #menu {
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 20px;
+    background-color: #2c2641;
+    background-image: url("images/bg-pattern-mobile-nav.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100%;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 1em;
+    z-index: 2;
+    text-transform: uppercase;
+  }
+  #menu a {
+    color: #fff;
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 1em auto;
+  }
+  #menu a:last-child {
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  #heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  #heading::before {
+    content: "";
+    background-image: url(images/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 451px;
+    pointer-events: none;
+  }
+  #heading::after {
+    content: "";
+    background-image: url(images/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    position: absolute;
+    bottom: -18%;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+  }
+  .image-intro {
+    margin: 0;
+    width: 100%;
+  }
+  #headingPic {
+    width: 100%;
+  }
+  #headingTextContainer {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .headingTitle:before {
+    margin: 0 auto;
+  }
+  #features {
+    text-align: center;
+  }
+  #banner {
+    flex-direction: column;
+    padding: 20px;
+    background: #2d2640 url(images/bg-pattern-how-we-work-mobile.svg) no-repeat top right;
+  }
+  .footerContent {
+    text-align: center;
+  }
+  .icons {
+    flex-direction: column;
+  }
+  .icons div:nth-child(2) {
+    margin-top: 1em;
+  }
+}
