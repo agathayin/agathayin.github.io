@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .cray {
+        color: #2ab2af;
+      }
+      .yellow {
+        color: #c0df34;
+      }
+      .grey {
+        color: #e5eff5;
+      }
+      .grayishBlue {
+        color: #98a6bd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="p-3 w-full lg:p-5">
+      <div class="text-[#2ab2af]">Join our community</div>
+      <div class="text-[#c0df34]">30-day, hassle-free money back guarantee</div>
+      <div class="text-[#98a6bd]">
+        Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are
+        serious about honing their skills.
+      </div>
+    </div>
+    <div class="w-full text-[#e5eff5] flex flex-col lg:flex-row">
+      <div class="bg-[#2ab2af] p-3 lg:w-6/12 lg:p-5">
+        <div class="font-semibold">Monthly Subscription</div>
+        <div><span class="text-lg font-bold">$29</span> <span class="text-sm font-thin">per month</span></div>
+        <div>Full access for less than &dollar;1 a day</div>
+        <div class="m-3"><button class="bg-[#c0df34] w-full rounded p-2 drop-shadow-lg">Sign Up</button></div>
+      </div>
+      <div class="bg-[#2ab2af] p-3 opacity-90 font-thin lg:w-6/12 lg:p-5">
+        <div class="font-bold">Why Us</div>
+        <div>Tutorials by industry experts</div>
+        <div>Peer &amp; expert code review</div>
+        <div>Coding exercises</div>
+        <div>Access to our GitHub repos</div>
+        <div>Community forum</div>
+        <div>Flashcard decks</div>
+        <div>New videos every week</div>
+      </div>
+    </div>
+  </body>
+</html>
