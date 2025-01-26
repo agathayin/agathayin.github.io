@@ -1,11 +1,11 @@
 //data
 const projects = [
   {
-    title: "Age Calculator",
-    imgUrl: "age-calculator-app-main/screenshot.jpg",
-    category: "Programming",
-    link: "age-calculator-app-main/index.html",
-    description: "JavaScript project about time calculation",
+    title: "Inventory Management system",
+    imgUrl: "inventory4d/images/cover.png",
+    category: "Info",
+    link: "inventory4d/index.html",
+    description: "MERN & MEAN stack for inventory management and order management systems.",
   },
   {
     title: "Sunnyside",
@@ -15,11 +15,18 @@ const projects = [
     description: "Responsive website with CSS and JavaScript",
   },
   {
-    title: "Comming Soon",
+    title: "Coming Soon",
     imgUrl: "base-apparel-coming-soon-master/images/hero-desktop.jpg",
     category: "Programming",
     link: "base-apparel-coming-soon-master/index.html",
     description: "Responsive website with CSS and JavaScript",
+  },
+  {
+    title: "Etomon",
+    imgUrl: "etomon/img/upcoming_classes.png",
+    category: "Info",
+    description: "Website pages written in Node, Express, Vanilla Javascript, jQuery and React.",
+    link: "/etomon/index.html",
   },
   {
     title: "Space Tourism",
@@ -29,18 +36,11 @@ const projects = [
     description: "Responsive website with CSS and jQuery",
   },
   {
-    title: "Pod request access landing page",
-    imgUrl: "images/pod_request_access.jpg",
+    title: "Age Calculator",
+    imgUrl: "age-calculator-app-main/screenshot.jpg",
     category: "Programming",
-    link: "pod/index.html",
-    description: "Responsive website with vanilla CSS and JavaScript",
-  },
-  {
-    title: "Etomon",
-    imgUrl: "etomon/img/upcoming_classes.png",
-    category: "Programming",
-    description: "Website pages written in Node, Express, Vanilla Javascript, jQuery and React.",
-    link: "/etomon/index.html",
+    link: "age-calculator-app-main/index.html",
+    description: "JavaScript project about time calculation",
   },
   {
     title: "Brochure design",
@@ -56,10 +56,12 @@ const projects = [
     description: "Use Bootstrap to create new interface for a current website",
   },
   {
-    title: "Design project: Mulan poster",
-    imgUrl: "images/mulan.png",
-    category: "Design",
-    description: "The New School media project. Designed for film Mulan.",
+    title: "P5.js data visualization",
+    imgUrl: "images/p5.gif",
+    category: "Programming",
+    link: "fake-news/index.html",
+    description:
+      "Fake news vs fact-checking data visualization. It uses JavaScript for analyzing and P5.js for visualization.",
   },
   {
     title: "Interactive design and SVG practice",
@@ -69,26 +71,31 @@ const projects = [
     description: "Harry Potter Fanbook website. This project practices JavaScript SVG coding and Illustration.",
   },
   {
+    title: "Pod request access landing page",
+    imgUrl: "images/pod_request_access.jpg",
+    category: "Programming",
+    link: "pod/index.html",
+    description: "Responsive website with vanilla CSS and JavaScript",
+  },
+  {
     title: "Real-time clock without hands challenge",
     imgUrl: "images/clock_day.gif",
     category: "Programming",
     link: "clock/myCanvas/index.html",
     description: "Express time with imagination and no numbers and no clock hands",
   },
-  {
-    title: "P5.js data visualization",
-    imgUrl: "images/p5.gif",
-    category: "Programming",
-    link: "fake-news/index.html",
-    description:
-      "Fake news vs fact-checking data visualization. It uses JavaScript for analyzing and P5.js for visualization.",
-  },
-  {
-    title: "CD product design",
-    imgUrl: "images/CD Cover & Posters.png",
-    category: "Design",
-    description: "The New School media project: cd poster and cover design.",
-  },
+  // {
+  //   title: "Design project: Mulan poster",
+  //   imgUrl: "images/mulan.png",
+  //   category: "Design",
+  //   description: "The New School media project. Designed for film Mulan.",
+  // },
+  // {
+  //   title: "CD product design",
+  //   imgUrl: "images/CD Cover & Posters.png",
+  //   category: "Design",
+  //   description: "The New School media project: cd poster and cover design.",
+  // },
   // {
   //   title: "Forum-style web design",
   //   imgUrl: "images/catsyard.png",
@@ -159,7 +166,10 @@ function renderLink(data, index) {
     );
   }
   if (data.category === "Programming" && data.link) {
-    return `<a class="demo" href="` + data.link + `">Demo</a>`;
+    return `<a class="demo" href="` + data.link + `">Live</a>`;
+  }
+  if (data.category === "Info" && data.link) {
+    return `<a class="demo" href=${data.link}>More Info</a>`;
   }
   return ``;
 }
