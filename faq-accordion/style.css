@@ -1,0 +1,69 @@
+body {
+  font-size: 16px;
+  background-image: url("assets/images/background-pattern-mobile.svg");
+  background-color: hsl(275, 100%, 97%);
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-family: "DM Serif Display", serif;
+}
+#container {
+  width: 60%;
+  margin: 20vh auto;
+  border-radius: 8px;
+  background: #fff;
+  padding: 5%;
+}
+#title {
+  font-size: 2em;
+  font-weight: 700;
+}
+.accordion {
+  background-color: #fff;
+  color: hsl(292, 42%, 14%);
+  cursor: pointer;
+  padding: 1em 50px 1em 0;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-weight: 600;
+}
+.active,
+.accordion:hover {
+  color: #ae28eb;
+}
+
+.accordion::after {
+  content: "\002B";
+  font-size: 12px;
+  float: right;
+  background: #ae28eb;
+  padding: 4px 7px;
+  border-radius: 50%;
+  color: #fff;
+  margin-right: -50px;
+}
+
+.active::after {
+  content: "\002D";
+  padding: 4px 9px;
+  background: hsl(292, 42%, 14%);
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  color: hsl(292, 16%, 49%);
+  font-weight: 200;
+  border-bottom: 1px solid #eee;
+}
+
+@media screen AND (min-width: 375px) {
+  body {
+    background-image: url("assets/images/background-pattern-desktop.svg");
+  }
+}
