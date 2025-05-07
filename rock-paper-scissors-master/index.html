@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Scripts -->
+    <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <img src="images/logo-bonus.svg" />
+        <div id="scoreContainer">
+          <div id="score">score</div>
+          <div id="scoreNum">0</div>
+        </div>
+      </div>
+
+      <div id="galleryContainer">
+        <div class="pentagon">
+          <div>
+            <img src="images/bg-pentagon.svg" alt="pentagon" id="pentagonImg" width="100%" />
+          </div>
+          <img src="images/icon-spock.svg" alt="spock" class="spock" onclick="selectPick('spock')" />
+          <img src="images/icon-scissors.svg" alt="scissors" class="scissors" onclick="selectPick('scissors')" />
+          <img src="images/icon-paper.svg" alt="paper" class="paper" onclick="selectPick('paper')" />
+          <img src="images/icon-lizard.svg" alt="lizard" class="lizard" onclick="selectPick('lizard')" />
+          <img src="images/icon-rock.svg" alt="rock" class="rock" onclick="selectPick('rock')" />
+        </div>
+      </div>
+
+      <div id="battle">
+        <div id="yPick">YOU PICKED</div>
+        <div id="yPickImg" class="pickImg">
+          <img src="images/icon-spock.svg" class="circleBorder spock" />
+        </div>
+        <div id="hPick">THE HOUSE PICKED</div>
+        <div id="hPickImg" class="pickImg">
+          <span class="circleBorder"></span>
+          <img src="images/icon-spock.svg" class="circleBorder hide" />
+        </div>
+        <div id="result">
+          <div id="resultText">YOU WIN</div>
+          <div><button id="paBtn" onclick="playagain()">PLAY AGAIN</button></div>
+        </div>
+      </div>
+
+      <div id="rules">
+        <button id="ruleBtn">RULES</button>
+      </div>
+    </div>
+    <div id="rulesModal" class="modal hide">
+      <div class="modalContent">
+        <div class="modalHeader">
+          <div>RULES</div>
+          <div class="close"><img src="images/icon-close.svg" /></div>
+        </div>
+        <div class="modalBody">
+          <img src="images/image-rules-bonus.svg" alt="rules image" style="width: 100%" />
+        </div>
+      </div>
+    </div>
+    <div style="display: none">Score Rules You Picked The House Picked You Win You Lose Play Again</div>
+  </body>
+</html>
