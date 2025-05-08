@@ -14,8 +14,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/agathayin/agathayin.github.io/rock-paper-scissors-master)
-- Live Site URL: [Add live site URL here](https://agathayin.github.io/rock-paper-scissors-master)
+- Solution URL: [https://github.com/agathayin/agathayin.github.io/tree/main/rock-paper-scissors-master](https://github.com/agathayin/agathayin.github.io/tree/main/rock-paper-scissors-master)
+- Live Site URL: [https://agathayin.github.io/rock-paper-scissors-master/](https://agathayin.github.io/rock-paper-scissors-master)
 
 ## My process
 

@@ -8,17 +8,17 @@ const projects = [
     description: "MERN & MEAN stack for inventory management and order management systems.",
   },
   {
+    title: "Rock Paper Scissors",
+    imgUrl: "rock-paper-scissors-master/images/screenshot.png",
+    category: "Programming",
+    link: "rock-paper-scissors-master/index.html",
+    description: "Responsive game with jQuery, CSS shadows, grid, and animation",
+  },
+  {
     title: "Sunnyside",
     imgUrl: "sunnyside/images/cover.jpg",
     category: "Programming",
     link: "sunnyside/index.html",
-    description: "Responsive website with CSS and JavaScript",
-  },
-  {
-    title: "Coming Soon",
-    imgUrl: "base-apparel-coming-soon-master/images/hero-desktop.jpg",
-    category: "Programming",
-    link: "base-apparel-coming-soon-master/index.html",
     description: "Responsive website with CSS and JavaScript",
   },
   {
@@ -111,6 +111,13 @@ const projects = [
   //   description:
   //     "Interactive website game. Based on the existing game. All images and the story belong to Akaba Studio. This project only aims to improve coding skills in creating complex tasks.",
   // },
+  {
+    title: "Coming Soon",
+    imgUrl: "base-apparel-coming-soon-master/images/hero-desktop.jpg",
+    category: "Programming",
+    link: "base-apparel-coming-soon-master/index.html",
+    description: "Responsive website with CSS and JavaScript",
+  },
 ];
 
 $(function () {
