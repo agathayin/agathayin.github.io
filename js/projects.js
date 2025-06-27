@@ -8,18 +8,19 @@ const projects = [
     description: "MERN & MEAN stack for inventory management and order management systems.",
   },
   {
-    title: "Rock Paper Scissors",
-    imgUrl: "rock-paper-scissors-master/images/screenshot.png",
+    title: "Product list with cart",
+    imgUrl: "images/screenshot_product-list-with-cart.png",
     category: "Programming",
-    link: "rock-paper-scissors-master/index.html",
-    description: "Responsive game with jQuery, CSS shadows, grid, and animation",
+    link: "https://agathayin.net/product-list-with-cart",
+    description: "Shopping page built by React, Next.js, TypeScript, and Tailwind CSS",
   },
+
   {
     title: "Sunnyside",
     imgUrl: "sunnyside/images/cover.jpg",
     category: "Programming",
     link: "sunnyside/index.html",
-    description: "Responsive website with CSS and JavaScript",
+    description: "Landing page with responsive design using Flexbox and CSS Grid",
   },
   {
     title: "Etomon",
@@ -29,11 +30,26 @@ const projects = [
     link: "/etomon/index.html",
   },
   {
-    title: "Space Tourism",
-    imgUrl: "space-tourism/assets/home/background-home-desktop.jpg",
+    title: "News Homepage",
+    imgUrl: "images/screenshot_news-homepage.png",
     category: "Programming",
-    link: "space-tourism/index.html",
-    description: "Responsive website with CSS and jQuery",
+    link: "https://agathayin.net/news-homepage",
+    description: "React news website layout built with Tailwind CSS",
+  },
+  {
+    title: "Rock Paper Scissors",
+    imgUrl: "rock-paper-scissors-master/images/screenshot.png",
+    category: "Programming",
+    link: "rock-paper-scissors-master/index.html",
+    description: "Interactive web game with jQuery, CSS shadows, grid, and animation",
+  },
+
+  {
+    title: "Real-time clock without hands challenge",
+    imgUrl: "images/clock_day.gif",
+    category: "Programming",
+    link: "clock/myCanvas/index.html",
+    description: "Express time with imagination and no numbers and no clock hands",
   },
   {
     title: "Age Calculator",
@@ -77,13 +93,7 @@ const projects = [
     link: "pod/index.html",
     description: "Responsive website with vanilla CSS and JavaScript",
   },
-  {
-    title: "Real-time clock without hands challenge",
-    imgUrl: "images/clock_day.gif",
-    category: "Programming",
-    link: "clock/myCanvas/index.html",
-    description: "Express time with imagination and no numbers and no clock hands",
-  },
+
   // {
   //   title: "Design project: Mulan poster",
   //   imgUrl: "images/mulan.png",
@@ -116,7 +126,28 @@ const projects = [
     imgUrl: "base-apparel-coming-soon-master/images/hero-desktop.jpg",
     category: "Programming",
     link: "base-apparel-coming-soon-master/index.html",
-    description: "Responsive website with CSS and JavaScript",
+    description: "Customized input box and form validation using JavaScript",
+  },
+  {
+    title: "Intro Section with Dropdown Navigation",
+    imgUrl: "images/screenshot_intro.png",
+    category: "Programming",
+    link: "https://agathayin.net/intro-section-with-dropdown-navigation",
+    description: "React navigation bar with dropdown menu on both desktop and mobile",
+  },
+  {
+    title: "URL Shortening",
+    imgUrl: "images/screenshot_url-shortening.png",
+    category: "Programming",
+    link: "https://agathayin.net/url-shortening",
+    description: "LocalStorage and API project built with React, Next.js, TypeScript, and Tailwind CSS",
+  },
+  {
+    title: "Space Tourism",
+    imgUrl: "space-tourism/assets/home/background-home-desktop.jpg",
+    category: "Programming",
+    link: "space-tourism/index.html",
+    description: "Responsive website with CSS and jQuery",
   },
 ];
 
@@ -173,7 +204,7 @@ function renderLink(data, index) {
     );
   }
   if (data.category === "Programming" && data.link) {
-    return `<a class="demo" href="` + data.link + `">Live</a>`;
+    return `<a class="demo" href="` + data.link + `" target="_blank">Live</a>`;
   }
   if (data.category === "Info" && data.link) {
     return `<a class="demo" href=${data.link}>More Info</a>`;
