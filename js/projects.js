@@ -8,21 +8,6 @@ const projects = [
     description: "MERN & MEAN stack for inventory management and order management systems.",
   },
   {
-    title: "Product list with cart",
-    imgUrl: "images/screenshot_product-list-with-cart.png",
-    category: "Programming",
-    link: "https://agathayin.net/product-list-with-cart",
-    description: "Shopping page built by React, Next.js, TypeScript, and Tailwind CSS",
-  },
-
-  {
-    title: "Sunnyside",
-    imgUrl: "sunnyside/images/cover.jpg",
-    category: "Programming",
-    link: "sunnyside/index.html",
-    description: "Landing page with responsive design using Flexbox and CSS Grid",
-  },
-  {
     title: "Etomon",
     imgUrl: "etomon/img/upcoming_classes.png",
     category: "Info",
@@ -30,11 +15,25 @@ const projects = [
     link: "/etomon/index.html",
   },
   {
-    title: "News Homepage",
-    imgUrl: "images/screenshot_news-homepage.png",
+    title: "Product list with cart",
+    imgUrl: "images/screenshot_product-list-with-cart.png",
+    category: "Programming",
+    link: "https://agathayin.net/product-list-with-cart",
+    description: "Shopping page built by React, Next.js, TypeScript, and Tailwind CSS",
+  },
+  {
+    title: "Room Homepage",
+    imgUrl: "images/room-homepage-preview.jpg",
     category: "Programming",
     link: "https://agathayin.net/news-homepage",
-    description: "React news website layout built with Tailwind CSS",
+    description: "Responsive homepage layout with slider built with React, Next.js, TypeScript, and Tailwind CSS",
+  },
+  {
+    title: "Sunnyside",
+    imgUrl: "sunnyside/images/cover.jpg",
+    category: "Programming",
+    link: "sunnyside/index.html",
+    description: "Landing page with responsive design using Flexbox and CSS Grid",
   },
   {
     title: "Rock Paper Scissors",
@@ -127,6 +126,13 @@ const projects = [
     category: "Programming",
     link: "base-apparel-coming-soon-master/index.html",
     description: "Customized input box and form validation using JavaScript",
+  },
+  {
+    title: "News Homepage",
+    imgUrl: "images/screenshot_news-homepage.png",
+    category: "Programming",
+    link: "https://agathayin.net/news-homepage",
+    description: "React news website layout built with Tailwind CSS",
   },
   {
     title: "Intro Section with Dropdown Navigation",

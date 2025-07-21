@@ -92,7 +92,7 @@ const experience = [
 $(function () {
   photoGallery();
   skillsList();
-  experienceTimeline();
+  // experienceTimeline();
 });
 
 function photoGallery() {
@@ -159,6 +159,7 @@ function skillsList() {
 }
 
 function experienceTimeline() {
+  return;
   if (experience && experience.length) {
     let experienceTimeline = experience.map((exp, index) => {
       return (
