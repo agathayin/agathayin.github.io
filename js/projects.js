@@ -48,7 +48,7 @@ const projects = [
     imgUrl: "images/clock_day.gif",
     category: "Programming",
     link: "clock/myCanvas/index.html",
-    description: "Express time with imagination and no numbers and no clock hands",
+    description: "Express time with imagination and no numbers and no clock hands. Built with P5.js",
   },
   {
     title: "Age Calculator",
